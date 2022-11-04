@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: configexample
+netty:
+  default:
+    allocator:
+      max-order: 3
+tech:
+  a:
+    id: "in"
+    test-configs:
+      team-name: "teamA"
+      group-name: "groupA"
+      task:
+        enabled: false
+    members: 1
+    max-members: 100
+  b:
+    id: "out"
+    test-configs:
+      team-name: "teamB"
+      group-name: "in-msg-*"
